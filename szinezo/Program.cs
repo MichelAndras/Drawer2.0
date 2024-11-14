@@ -2,10 +2,33 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using Microsoft.EntityFrameworkCore;
 
 namespace MenuForDrawing
 {
-    internal class Program
+    public class Drawing
+    {
+        public int Id { get; set; }
+        public string DateTime { get; set; }
+        public int Attributes { get; set; }
+    }
+
+    public class DrawingContext : DbContext
+    {
+        public DbSet<Drawing> Drawings { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            base.OnConfiguring(optionsBuilder);
+        }
+
+
+
+
+
+
+
+        internal class Program
     {
         static bool hasPreviousDrawing = false;
         static List<(int x, int y, char character, ConsoleColor color)> trail = new List<(int, int, char, ConsoleColor)>();

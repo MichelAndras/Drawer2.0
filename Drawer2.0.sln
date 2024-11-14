@@ -5,6 +5,11 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "szinezo", "szinezo\szinezo.csproj", "{189312BD-4CA9-4645-A48C-F9ABCA144F1A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entity", "Entity", "{462D7F28-18DA-42E2-BCF6-41DDF987CB95}"
+	ProjectSection(SolutionItems) = preProject
+		DrawerDb.cs = DrawerDb.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
